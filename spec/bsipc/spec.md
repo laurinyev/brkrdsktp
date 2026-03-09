@@ -27,9 +27,7 @@ There are 4 field types:
 * `BSIPC_FIELD_CALLABLE`(0x3): a field that can be called with certain arguments
 
 The callable field has the folowing content:
-```
-[bound command ID: 4 byte little endian unsigned integer][number of arguments: 1 byte unsigned integer]
-{list of argument types: 1 byte each}[length of UTF-8 name: 1 byte unsigned integer]{UTF-8 name}```
+```[bound command ID: 4 byte little endian unsigned integer][number of arguments: 1 byte unsigned integer]{list of argument types: 1 byte each}[length of UTF-8 name: 1 byte unsigned integer]{UTF-8 name}```
 
 Argument types follow the same types as arbitrary data packet types.
 
